@@ -4,12 +4,33 @@ import os
 # =========================
 # LOAD DATA
 # =========================
-df = pl.read_csv(
-    r"C:\Users\SRI VIGNESH\Downloads\ML Project Student Lifestyle Analytics\data\student_lifestyle_raw_data.csv",
-    infer_schema_length=10000
-)
+import gspread
+import pandas as pd
+import polars as pl
 
-# Clean column names
+
+gc = gspread.service_account(filename="Credentials.json")
+
+
+sheet = gc.open("student_lifestyle_raw_data").sheet1
+
+data = sheet.get_all_records()
+
+df_pd = pd.DataFrame(data)
+
+# Convert everything to string first (safe step)
+df_pd = df_pd.astype(str)
+
+# Replace empty strings with None
+df_pd = df_pd.replace("", None)
+
+# Convert to Polars
+df = pl.from_pandas(df_pd)
+
+print("Data loaded from Google Sheets ✅")
+
+# cleaning the column names by stripping whitespace
+
 df = df.rename({col: col.strip() for col in df.columns})
 
 print("Columns:", df.columns)
