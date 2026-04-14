@@ -1,0 +1,114 @@
+Timestamp,Roll No ,Age  ,Department  ,Year of Study  ,Average sleep hours per day ,Sleep consistency ,Exercise frequency  ,How often do you feel tired during class?  ,Average study hours per day  ,Attendance Percentage ,Assignment submission behavior  ,Concentration during classes  ,Daily screen time (hours)  ,Late night phone usage  ,Social media usage level  ,Stress level  ,How often do you feel overwhelmed?  ,Time management ability  ,Self Productivity rating  ,Current CGPA  ,How do you rate your academic performance?  
+26/03/2026 01:28:56,24AD116,19,AI &DS,2nd Year,9,Somewhat consistent,Rarely,Sometimes,6,92,Always on time,Medium,6,Daily,High,Moderate,Sometimes,Average,7,9.1,Good
+26/03/2026 09:38:54,24AD125,20,AI &DS,2nd Year,7,Very consistent,Once/week,Sometimes,3,94,Always on time,High,5,Sometimes,Moderate,Low,Never,Good,6,7.82,Good
+26/03/2026 09:39:33,24AD114,19,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Often,4,100,Always on time,Medium,4.3,Sometimes,Moderate,Moderate,Sometimes,Good,9,8,Good
+26/03/2026 09:41:12,24AD124,19,AI &DS,2nd Year,7,Very consistent,Once/week,Sometimes,2,86,Always on time,Medium,2,Sometimes,Moderate,Moderate,Sometimes,Average,7,7.7,Good
+26/03/2026 09:41:47,24ad077@kpriet.ac.in,19,AI &DS,2nd Year,7,Somewhat consistent,Never,Sometimes,3,96.21,Always on time,Medium,6,Sometimes,Moderate,Moderate,Sometimes,Good,9,8.52,Good
+26/03/2026 09:43:07,24AD066,19,AI &DS,2nd Year,7,Irregular,Once/week,Sometimes,4,94.3,Always on time,Medium,2,Sometimes,Moderate,Moderate,Often,Average,7,8.48,Good
+26/03/2026 09:43:26,24ad120,19,AI &DS,2nd Year,7,Somewhat consistent,Never,Sometimes,1,90,Always on time,Medium,7,Sometimes,High,High,Sometimes,Poor,9,8.04,Good
+26/03/2026 09:43:58,25ADL01 ,19,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Sometimes,2,96.98,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,8,7.9,Good
+26/03/2026 09:49:36,24ad119,19,AI &DS,2nd Year,7,Somewhat consistent,3–4 times/week,Sometimes,2,95,Always on time,Medium,5,Sometimes,Moderate,Low,Sometimes,Average,5,7.85,Good
+26/03/2026 11:13:24,22AD065,21,AI &DS,4th Year,4,Irregular,3–4 times/week,Often,4,90,Always on time,High,6,Daily,Moderate,Moderate,Sometimes,Good,6,7.56,Fair
+26/03/2026 11:16:01,22AD004,21,AI &DS,4th Year,8,Very consistent,Once/week,Sometimes,5,98,Always on time,Medium,5,Sometimes,Moderate,Low,Sometimes,Good,9,7.3,Good
+26/03/2026 11:21:30,22AD036,21,AI &DS,4th Year,7,Somewhat consistent,3–4 times/week,Sometimes,2,90,Always on time,High,5,Sometimes,Moderate,Moderate,Sometimes,Good,8,8,Good
+26/03/2026 11:23:30,22AD022,21,AI &DS,4th Year,6,Irregular,3–4 times/week,Sometimes,2,90,Always on time,High,8,Daily,High,Moderate,Sometimes,Average,6,7,Fair
+26/03/2026 11:33:12,23adl05 ,21,AI &DS,4th Year,5,Irregular,Once/week,Sometimes,1,100,Always on time,Medium,4,Daily,Moderate,High,Never,Average,5,8,Good
+26/03/2026 11:51:24,22AD069,21,AI &DS,4th Year,6,Irregular,Rarely,Often,2,80,Always on time,Medium,5,Sometimes,Moderate,High,Sometimes,Poor,5,7,Fair
+26/03/2026 12:11:42,24ec042,18,ECE,2nd Year,7,Somewhat consistent,3–4 times/week,Never,2,90,Always on time,High,5,Sometimes,Moderate,Moderate,Never,Good,8,8.02,Good
+26/03/2026 12:12:29,22AD056,21,AI &DS,4th Year,7,Somewhat consistent,3–4 times/week,Often,1,75,Always on time,High,1,Sometimes,Moderate,Moderate,Sometimes,Good,8,7.5,Good
+26/03/2026 12:12:35,24cs2672,24,CSE,2nd Year,6,Very consistent,Once/week,Sometimes,5,89.48,Always on time,High,1,Never,Low,Low,Sometimes,Average,8,7.6,Good
+26/03/2026 12:16:31,24ec026,19,ECE,2nd Year,5,Irregular,3–4 times/week,Often,1,89.53,Always on time,Medium,7.5,Daily,High,Moderate,Sometimes,Poor,6,6.95,Poor
+26/03/2026 12:28:15,24BM017,19,BME,2nd Year,7,Somewhat consistent,Never,Often,1,92,Always on time,Medium,4,Sometimes,High,High,Sometimes,Poor,4,8.4,Good
+26/03/2026 12:35:23,25ECL12 ,18,ECE,2nd Year,7,Somewhat consistent,3–4 times/week,Sometimes,1,94,Sometimes late,Medium,10,Sometimes,Moderate,Moderate,Sometimes,Good,9,7.2,Good
+26/03/2026 12:39:54,22ad013,21,AI &DS,4th Year,6,Somewhat consistent,Never,Sometimes,2,88,Always on time,Medium,2,Never,Low,Low,Sometimes,Good,8,8.5,Good
+26/03/2026 12:46:30,23adl06 ,21,AI &DS,4th Year,8,Very consistent,Once/week,Sometimes,2,85,Always on time,Medium,2,Sometimes,Moderate,Moderate,Sometimes,Good,7,7.86,Good
+26/03/2026 12:55:43,22ad015,22,AI &DS,4th Year,7,Somewhat consistent,3–4 times/week,Sometimes,3,98,Always on time,High,5,Daily,High,Moderate,Sometimes,Good,6,7.2,Good
+26/03/2026 13:00:11,24IT024,19,IT,2nd Year,6,Irregular,Once/week,Sometimes,2,98,Always on time,Medium,4,Daily,High,Moderate,Sometimes,Average,5,7.9,Good
+26/03/2026 13:13:23,24ec185,19,ECE,2nd Year,8,Somewhat consistent,3–4 times/week,Sometimes,3,95.7,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Good,7,8.35,Good
+26/03/2026 13:25:17,22CB065,20,CSBS,4th Year,3,Irregular,3–4 times/week,Sometimes,2,90,Sometimes late,Medium,18,Sometimes,Moderate,Moderate,Sometimes,Average,8,7.77,Good
+26/03/2026 13:25:40,22CB027,21,CSBS,4th Year,9,Very consistent,Never,Never,3,100,Always on time,High,6,Sometimes,Moderate,Moderate,Sometimes,Average,8,6.5,Good
+26/03/2026 13:26:13,24cs174,19,CSE,2nd Year,7,Very consistent,Rarely,Often,1,88,Always on time,Medium,5,Sometimes,Moderate,Moderate,Sometimes,Average,8,8,Good
+26/03/2026 13:26:28,24cb060,18,CSBS,2nd Year,5,Somewhat consistent,Once/week,Sometimes,3,85.5,Always on time,Medium,6,Daily,Moderate,Moderate,Sometimes,Good,7,8.09,Good
+26/03/2026 13:29:00,24CB040,19,CSBS,2nd Year,5,Irregular,3–4 times/week,Sometimes,3,93.51,Always on time,High,2,Never,Moderate,Low,Never,Good,10,7.57,Excellent
+26/03/2026 13:29:53,22cb040,21,CSBS,4th Year,6,Somewhat consistent,Rarely,Sometimes,4,90,Always on time,Medium,8,Never,Moderate,Moderate,Sometimes,Average,4,7,Good
+26/03/2026 13:32:14,24CB061,19,CSBS,2nd Year,7,Very consistent,3–4 times/week,Never,2,78,Always on time,Medium,2,Sometimes,Moderate,Low,Sometimes,Average,7,7.7,Good
+26/03/2026 13:34:26,24bm070 ,22,BME,2nd Year,8,Very consistent,3–4 times/week,Sometimes,3,65.78,Sometimes late,Medium,5,Sometimes,Moderate,Moderate,Never,Average,6,7.23,Good
+26/03/2026 13:44:05,23CB063,20,CSBS,3rd Year,5,Somewhat consistent,Rarely,Sometimes,3,84,Always on time,Medium,2,Sometimes,Moderate,Moderate,Sometimes,Good,7,8.3,Good
+26/03/2026 13:45:12,22CB054,21,CSBS,4th Year,6,Somewhat consistent,Once/week,Sometimes,4,100,Always on time,High,5,Sometimes,Moderate,Low,Sometimes,Good,5,7.22,Good
+26/03/2026 14:02:14,22CB042,20,CSBS,4th Year,6,Somewhat consistent,3–4 times/week,Often,0,100,Always on time,Low,8,Sometimes,Moderate,Low,Often,Average,5,8.2,Poor
+26/03/2026 14:30:07,24AD127,19,AI &DS,2nd Year,8,Somewhat consistent,Rarely,Sometimes,7,89,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,8,8.28,Good
+26/03/2026 14:34:22,24ad016 ,19,AI &DS,2nd Year,6,Somewhat consistent,Once/week,Sometimes,2,95.11,Always on time,Medium,3,Sometimes,Moderate,Moderate,Often,Good,7,7.7,Good
+26/03/2026 14:35:06,24AD063,18,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Often,1,94,Sometimes late,Medium,7,Sometimes,Moderate,High,Sometimes,Average,6,8.03,Fair
+26/03/2026 14:36:09,24ad030,18,AI &DS,2nd Year,8,Somewhat consistent,Once/week,Often,1,94,Sometimes late,High,8,Sometimes,Moderate,Moderate,Sometimes,Average,8,8.041,Good
+26/03/2026 14:36:21,22AD007,22,AI &DS,4th Year,7,Somewhat consistent,3–4 times/week,Sometimes,6,95,Always on time,High,6,Never,Moderate,Low,Sometimes,Good,10,7,Good
+26/03/2026 14:36:41,24CB002,19,CSBS,2nd Year,6,Somewhat consistent,Once/week,Often,3,98.7,Sometimes late,Medium,4,Daily,Moderate,Moderate,Often,Average,7,8.19,Good
+26/03/2026 14:37:52,25ADL05,19,AI &DS,2nd Year,9,Very consistent,3–4 times/week,Sometimes,1,95,Sometimes late,High,4,Never,Moderate,Low,Never,Good,9,7.64,Good
+26/03/2026 14:39:14,24AD061,19,AI &DS,2nd Year,10,Somewhat consistent,Rarely,Sometimes,4,99,Always on time,Medium,2,Sometimes,Moderate,Low,Sometimes,Average,7,8.23,Excellent
+26/03/2026 14:40:14,24AD003,19,AI &DS,2nd Year,6,Somewhat consistent,3–4 times/week,Sometimes,1,92,Sometimes late,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Poor,7,7.88,Poor
+26/03/2026 15:06:42,25adl09 ,19,AI &DS,2nd Year,5,Somewhat consistent,Rarely,Sometimes,8,98,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Good,9,7.5,Good
+26/03/2026 15:18:33,24mi010,18,Mechatronics,2nd Year,8,Somewhat consistent,Rarely,Sometimes,2,82,Sometimes late,Medium,3,Sometimes,Moderate,Low,Sometimes,Good,6,7.6,Good
+26/03/2026 15:19:58,24AD060 ,18,AI &DS,2nd Year,5,Irregular,Never,Often,2,92.5,Always on time,Medium,5,Daily,Moderate,High,Often,Poor,4,7.8,Fair
+26/03/2026 15:55:19,22ad035 ,23,AI &DS,4th Year,6,Irregular,Rarely,Sometimes,5,100,Always on time,Medium,4,Sometimes,Moderate,High,Sometimes,Good,6,7.45,Fair
+26/03/2026 16:02:15,24AD042,18,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Sometimes,1,76.21,Always on time,Medium,9,Sometimes,Moderate,Moderate,Sometimes,Good,9,6.8,Good
+26/03/2026 16:04:00,24CB023,20,CSBS,2nd Year,5,Somewhat consistent,Once/week,Never,5,98.3,Always on time,High,3,Sometimes,Moderate,Moderate,Sometimes,Good,9,8.95,Excellent
+26/03/2026 16:34:24,24ad029 ,18,AI &DS,2nd Year,8,Somewhat consistent,3–4 times/week,Often,0,88,Sometimes late,Medium,4,Sometimes,Moderate,Moderate,Never,Average,6,7.97,Fair
+26/03/2026 16:37:31,24AD049,19,AI &DS,2nd Year,6,Very consistent,Once/week,Often,1,86.66,Always on time,Medium,8,Sometimes,Moderate,High,Sometimes,Good,5,8.17,Good
+26/03/2026 16:44:14,24AD048,20,AI &DS,2nd Year,6,Very consistent,Rarely,Sometimes,4,98.99,Always on time,High,4,Never,High,Low,Never,Good,10,9.044,Excellent
+26/03/2026 16:52:27,25adl07 ,20,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Sometimes,2,91.7,Sometimes late,High,4,Sometimes,Moderate,Moderate,Sometimes,Good,8,7.8,Good
+26/03/2026 17:08:31,22AD066,20,AI &DS,4th Year,4,Irregular,3–4 times/week,Sometimes,2,75,Sometimes late,Medium,5,Daily,Moderate,Moderate,Sometimes,Average,6,6.9,Good
+26/03/2026 17:09:28,22AD068,21,AI &DS,4th Year,3,Very consistent,3–4 times/week,Sometimes,2,75,Sometimes late,Medium,15,Daily,High,Low,Never,Good,10,7,Good
+26/03/2026 17:49:21,24AD058,19,AI &DS,2nd Year,7,Very consistent,Rarely,Sometimes,3,96,Always on time,High,3,Sometimes,Moderate,Moderate,Sometimes,Good,9,8.57,Good
+26/03/2026 18:04:42,24AD054,19,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Sometimes,3,87.31,Always on time,High,4,Sometimes,Moderate,Moderate,Sometimes,Good,8,7.7,Good
+26/03/2026 18:10:38,24AD088 ,20,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Often,3,90,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Good,8,8.26,Good
+26/03/2026 18:11:14,24ad100,19,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Sometimes,3,98.45,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,8,8.28,Good
+26/03/2026 18:14:19,24CS131,19,CSE,2nd Year,4,Somewhat consistent,Rarely,Sometimes,5,95,Always on time,Medium,6,Daily,Moderate,Moderate,Sometimes,Good,8,9.1,Fair
+26/03/2026 18:14:55,24AD081,19,AI &DS,2nd Year,8,Somewhat consistent,3–4 times/week,Sometimes,1,89.5,Always on time,Medium,5,Sometimes,Moderate,Moderate,Sometimes,Good,7,8.28,Good
+26/03/2026 18:15:17,24AD074,19,AI &DS,2nd Year,6,Somewhat consistent,Rarely,Sometimes,1,91,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,8,7.877,Good
+26/03/2026 18:17:55,24AD075 ,19,AI &DS,2nd Year,6,Irregular,Rarely,Sometimes,2,96.91,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Average,5,8.49,Good
+26/03/2026 18:19:34,24ad038,20,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Often,3,70,Always on time,High,6,Sometimes,Moderate,Moderate,Sometimes,Average,5,8.18,Good
+26/03/2026 18:20:22,24AD092,19,AI &DS,2nd Year,8,Somewhat consistent,Never,Often,1,91.89,Always on time,Medium,2,Sometimes,Moderate,Moderate,Sometimes,Average,8,8.71,Good
+26/03/2026 18:22:03,24CS162,19,CSE,2nd Year,6,Somewhat consistent,Rarely,Often,4,90,Always on time,Medium,8,Daily,Moderate,Moderate,Sometimes,Average,8,9.2,Good
+26/03/2026 18:24:18,24AD091,19,AI &DS,2nd Year,4,Somewhat consistent,Rarely,Sometimes,4,94.4,Always on time,Medium,5,Sometimes,Moderate,Moderate,Sometimes,Average,8,8.46,Good
+26/03/2026 18:28:58,24AD093,19,AI &DS,2nd Year,6,Irregular,Rarely,Sometimes,4,87.69,Always on time,High,6,Sometimes,Moderate,Low,Sometimes,Good,6,6.94,Good
+26/03/2026 18:31:07,24IT060 ,20,IT,2nd Year,6,Somewhat consistent,3–4 times/week,Sometimes,2,99,Always on time,Medium,7,Sometimes,Moderate,Moderate,Sometimes,Good,8,8.5,Good
+26/03/2026 18:35:49,24AD083 ,19,AI &DS,2nd Year,7,Very consistent,3–4 times/week,Sometimes,2,95,Always on time,Medium,5,Sometimes,Moderate,Moderate,Sometimes,Good,9,8.94,Good
+26/03/2026 18:37:01,24CB042,18,CSBS,2nd Year,6,Very consistent,Never,Sometimes,3,79.5,Always on time,Low,10,Daily,High,Moderate,Sometimes,Average,7,7.6,Fair
+26/03/2026 18:43:49,22CB005,21,CSBS,4th Year,6,Somewhat consistent,Rarely,Sometimes,2,94,Always on time,High,4,Sometimes,Moderate,Moderate,Sometimes,Average,9,7.94,Good
+26/03/2026 18:47:44,24it038 ,19,IT,2nd Year,8,Very consistent,Once/week,Sometimes,2,96,Always on time,Medium,5,Sometimes,Moderate,Moderate,Sometimes,Good,6,8.3,Good
+26/03/2026 18:50:15,24cs181,19,CSE,2nd Year,4,Very consistent,Never,Often,0,90,Always on time,Medium,7,Daily,Moderate,High,Sometimes,Good,10,8,Good
+26/03/2026 18:50:22,24cs163,18,CSE,2nd Year,6,Somewhat consistent,Rarely,Often,3,97,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Average,6,8.9,Good
+26/03/2026 18:51:19,24AD115,19,AI &DS,2nd Year,7,Somewhat consistent,Never,Sometimes,2,89.15,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Good,7,8.21,Fair
+26/03/2026 18:51:22,24cs146 ,19,CSE,2nd Year,7,Somewhat consistent,Rarely,Often,2,99,Always on time,Medium,2,Daily,Moderate,Moderate,Sometimes,Good,7,8.7,Good
+26/03/2026 19:04:29,24AD078,18,AI &DS,2nd Year,6,Irregular,Rarely,Sometimes,2,97.4,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Good,5,8.8,Good
+26/03/2026 19:25:08,24cb035,19,CSBS,2nd Year,6,Somewhat consistent,3–4 times/week,Often,1,82,Always on time,Medium,5,Sometimes,Low,Moderate,Sometimes,Average,6,7.56,Good
+26/03/2026 19:26:13,24ad069 ,19,AI &DS,2nd Year,6,Somewhat consistent,3–4 times/week,Sometimes,3,96,Always on time,Medium,4,Sometimes,Moderate,High,Sometimes,Average,2,6.3,Good
+26/03/2026 21:23:25,24ec045,18,ECE,2nd Year,7,Somewhat consistent,Rarely,Sometimes,5,99,Sometimes late,Medium,8,Sometimes,Moderate,High,Sometimes,Average,5,8,Good
+26/03/2026 22:25:31,24ad095,19,AI &DS,2nd Year,7,Irregular,3–4 times/week,Sometimes,1.5,90,Always on time,Medium,4,Daily,Moderate,High,Sometimes,Poor,6,8.1,Good
+26/03/2026 23:06:09,24AD008,18,AI &DS,2nd Year,6,Very consistent,Once/week,Often,2,91,Always on time,Medium,11,Never,High,Moderate,Sometimes,Poor,3,8.72,Good
+26/03/2026 23:32:59,25ad71,18,AI &DS,1st Year,9,Very consistent,3–4 times/week,Often,9,82,Sometimes late,High,8,Daily,Moderate,Low,Often,Good,10,8,Excellent
+26/03/2026 23:44:16,23ch009,20,Others,3rd Year,7,Very consistent,3–4 times/week,Sometimes,4,72.71,Always on time,High,6,Daily,Moderate,Low,Sometimes,Average,9,8.61,Good
+27/03/2026 07:24:59,24ec125,19,ECE,2nd Year,7,Somewhat consistent,Once/week,Sometimes,1,88.7,Sometimes late,Medium,5,Sometimes,Moderate,High,Sometimes,Average,6,7.7,Fair
+27/03/2026 08:20:51,25AD086 ,17,AI &DS,1st Year,9,Very consistent,Once/week,Often,0.25,97,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Average,6,8.8,Good
+27/03/2026 16:02:50,24ad113,19,AI &DS,2nd Year,7,Somewhat consistent,Never,Never,1,82,Sometimes late,Medium,5,Sometimes,High,Moderate,Sometimes,Average,5,8,Good
+28/03/2026 11:23:27,24ad096,19,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Sometimes,2,88,Always on time,Medium,4,Sometimes,Moderate,Low,Sometimes,Good,8,8.42,Good
+28/03/2026 11:23:40,24AD103,19,AI &DS,2nd Year,8,Very consistent,Rarely,Sometimes,1,89,Always on time,Medium,6,Sometimes,Moderate,Low,Never,Average,5,7.85,Fair
+28/03/2026 11:23:52,24AD110,19,AI &DS,2nd Year,6,Somewhat consistent,Never,Sometimes,1,87,Always on time,Medium,10,Sometimes,High,Moderate,Sometimes,Average,5,9.17,Good
+28/03/2026 11:24:37,24AD080 ,19,AI &DS,2nd Year,6,Somewhat consistent,Rarely,Sometimes,2,94,Always on time,High,5,Sometimes,Moderate,Low,Sometimes,Good,7,7.4,Fair
+28/03/2026 11:27:41,34ad122,19,AI &DS,2nd Year,7,Somewhat consistent,Never,Sometimes,1,76,Always on time,Medium,5,Sometimes,Moderate,Moderate,Sometimes,Average,7,7.2,Good
+28/03/2026 11:27:42,24ad071,19,AI &DS,2nd Year,7,Somewhat consistent,3–4 times/week,Never,3,86,Always on time,Medium,4,Never,Moderate,Low,Never,Good,7,7.6,Good
+28/03/2026 11:32:05,24ad076,19,AI &DS,2nd Year,7,Somewhat consistent,Rarely,Sometimes,1,94,Always on time,Medium,4,Never,Moderate,Moderate,Sometimes,Average,7,8.52,Good
+28/03/2026 11:40:22,24ad118,19,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Sometimes,1,87,Sometimes late,Medium,8,Sometimes,High,Moderate,Sometimes,Average,7,7.75,Good
+28/03/2026 11:40:40,24AD097,19,AI &DS,2nd Year,8,Somewhat consistent,Rarely,Sometimes,4,90,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,7,8,Good
+28/03/2026 11:50:14,24AD107 ,19,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Never,6,94,Always on time,High,4,Sometimes,Moderate,Moderate,Sometimes,Good,8,8.466,Good
+28/03/2026 12:22:13,24AD134,20,AI &DS,2nd Year,6.5,Somewhat consistent,Rarely,Sometimes,3,55,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,5,6.06,Fair
+28/03/2026 13:54:54,Ramanarajarajan T,19,AI &DS,2nd Year,8,Somewhat consistent,Rarely,Often,2,87,Always on time,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,6,8.55,Good
+28/03/2026 13:58:17,24AD073,18,AI &DS,2nd Year,7,Very consistent,Never,Sometimes,2,90,Always on time,Medium,8,Daily,High,Low,Never,Good,4,8.3,Good
+28/03/2026 14:15:08,24ad099 ,19,AI &DS,2nd Year,5,Irregular,3–4 times/week,Often,3,85,Sometimes late,Medium,6,Sometimes,Moderate,Moderate,Often,Average,6,7.1,Good
+28/03/2026 14:24:44,24AD085,19,AI &DS,2nd Year,6,Somewhat consistent,Never,Sometimes,2,94,Always on time,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Average,5,8.2,Good
+29/03/2026 08:56:12,24ad112,20,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Sometimes,10,85,Always on time,Medium,4,Sometimes,High,Moderate,Sometimes,Average,9,7.7,Good
+29/03/2026 15:59:46,24aids127,19,AI &DS,4th Year,9,Somewhat consistent,Rarely,Often,0,93,Sometimes late,Low,4,Never,High,High,Often,Average,4,8,Good
+29/03/2026 16:21:13,721422115045,21,Mechatronics,4th Year,7,Somewhat consistent,3–4 times/week,Sometimes,2,90,Sometimes late,Medium,3,Sometimes,Moderate,Moderate,Sometimes,Average,8,8.7,Good
+31/03/2026 13:46:51,24AD105 ,19,AI &DS,2nd Year,8,Somewhat consistent,3–4 times/week,Often,1,83.5,Sometimes late,Medium,3,Sometimes,Moderate,Low,Sometimes,Average,7,7.2,Good
+01/04/2026 13:04:24,24AD052,19,AI &DS,2nd Year,7,Somewhat consistent,Once/week,Sometimes,1,94,Sometimes late,Medium,4,Sometimes,Moderate,Moderate,Sometimes,Average,6,8.34,Good
+02/04/2026 08:31:38,24bm058,19,BME,2nd Year,8,Very consistent,Rarely,Often,2,91,Always on time,Medium,6,Sometimes,Moderate,Moderate,Sometimes,Average,4,7.5,Poor
+11/04/2026 23:46:11,24ec057,19,ECE,2nd Year,7,Very consistent,3–4 times/week,Sometimes,2,90,Always on time,Medium,5,Sometimes,Moderate,Low,Never,Average,7,8.2,Good
