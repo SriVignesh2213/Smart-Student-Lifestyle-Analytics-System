@@ -48,26 +48,26 @@ def apply_custom_theme():
         """
         <style>
             :root {
-                --bg-soft: #f4f7fb;
+                --bg-soft: #f5f5f5;
                 --panel: #ffffff;
-                --ink: #1f2937;
-                --muted: #6b7280;
-                --accent: #0f766e;
-                --accent-2: #f59e0b;
-                --ring: rgba(15, 118, 110, 0.20);
+                --ink: #111111;
+                --muted: #525252;
+                --accent: #111111;
+                --accent-2: #262626;
+                --ring: rgba(0, 0, 0, 0.16);
             }
             .stApp {
                 background:
-                    radial-gradient(1200px 500px at -5% -10%, rgba(245, 158, 11, 0.10), transparent 55%),
-                    radial-gradient(900px 500px at 110% -10%, rgba(15, 118, 110, 0.12), transparent 50%),
+                    radial-gradient(1200px 500px at -5% -10%, rgba(0, 0, 0, 0.05), transparent 55%),
+                    radial-gradient(900px 500px at 110% -10%, rgba(0, 0, 0, 0.04), transparent 50%),
                     var(--bg-soft);
             }
             .main-card {
-                background: linear-gradient(120deg, #0f172a 0%, #0f766e 100%);
+                background: linear-gradient(120deg, #111111 0%, #3a3a3a 100%);
                 border-radius: 16px;
                 padding: 20px 22px;
-                color: #f8fafc;
-                box-shadow: 0 12px 30px rgba(15, 23, 42, 0.24);
+                color: #fafafa;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
                 margin-bottom: 14px;
             }
             .main-card h1 {
@@ -78,19 +78,19 @@ def apply_custom_theme():
             }
             .main-card p {
                 margin: 0;
-                color: #dbeafe;
+                color: #e5e5e5;
             }
             .insight-card {
                 background: var(--panel);
-                border: 1px solid #e5e7eb;
+                border: 1px solid #e4e4e7;
                 border-left: 4px solid var(--accent);
                 border-radius: 12px;
                 padding: 12px 14px;
-                box-shadow: 0 8px 16px rgba(17, 24, 39, 0.06);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
             }
             .stMetric {
                 background: rgba(255, 255, 255, 0.86);
-                border: 1px solid #e5e7eb;
+                border: 1px solid #e4e4e7;
                 border-radius: 12px;
                 padding: 10px 12px;
             }
@@ -99,7 +99,7 @@ def apply_custom_theme():
             }
             .stTabs [data-baseweb="tab"] {
                 background: #ffffff;
-                border: 1px solid #d1d5db;
+                border: 1px solid #d4d4d8;
                 border-radius: 999px;
                 padding: 8px 14px;
             }
@@ -187,6 +187,8 @@ with st.sidebar:
 # ============================================================================
 
 apply_custom_theme()
+px.defaults.template = "plotly_white"
+px.defaults.color_discrete_sequence = px.colors.qualitative.Bold
 
 st.markdown(
     """
@@ -320,28 +322,52 @@ if (
                             title="Sleep vs GPA (colored by Burnout Risk)",
                             opacity=0.75,
                         )
+                        fig.update_traces(marker_line_color="#111111", marker_line_width=0.6)
                         st.plotly_chart(fig, use_container_width=True)
                 with c2:
-                    if "burnout_risk" in df.columns:
-                        avg_burnout = float(df["burnout_risk"].mean())
-                        fig = go.Figure(
-                            go.Indicator(
-                                mode="gauge+number",
-                                value=avg_burnout,
-                                title={"text": "Average Burnout Risk"},
-                                gauge={
-                                    "axis": {"range": [0, 10]},
-                                    "bar": {"color": "#0f766e"},
-                                    "steps": [
-                                        {"range": [0, 3.5], "color": "#dcfce7"},
-                                        {"range": [3.5, 6], "color": "#fef3c7"},
-                                        {"range": [6, 10], "color": "#fee2e2"},
-                                    ],
-                                },
+                    g1, g2 = st.columns(2)
+                    with g1:
+                        if "burnout_risk" in df.columns:
+                            avg_burnout = float(df["burnout_risk"].mean())
+                            fig = go.Figure(
+                                go.Indicator(
+                                    mode="gauge+number",
+                                    value=avg_burnout,
+                                    title={"text": "Average Burnout Risk"},
+                                    gauge={
+                                        "axis": {"range": [0, 10]},
+                                        "bar": {"color": "#0f766e"},
+                                        "steps": [
+                                            {"range": [0, 3.5], "color": "#dcfce7"},
+                                            {"range": [3.5, 6], "color": "#fef3c7"},
+                                            {"range": [6, 10], "color": "#fee2e2"},
+                                        ],
+                                    },
+                                )
                             )
-                        )
-                        fig.update_layout(height=380)
-                        st.plotly_chart(fig, use_container_width=True)
+                            fig.update_layout(height=320)
+                            st.plotly_chart(fig, use_container_width=True)
+                    with g2:
+                        if "lifestyle_score" in df.columns:
+                            avg_lifestyle = float(df["lifestyle_score"].mean())
+                            fig = go.Figure(
+                                go.Indicator(
+                                    mode="gauge+number",
+                                    value=avg_lifestyle,
+                                    title={"text": "Average Lifestyle Score"},
+                                    gauge={
+                                        "axis": {"range": [0, 10]},
+                                        "bar": {"color": "#1d4ed8"},
+                                        "steps": [
+                                            {"range": [0, 4], "color": "#fee2e2"},
+                                            {"range": [4, 7], "color": "#fef3c7"},
+                                            {"range": [7, 10], "color": "#dcfce7"},
+                                        ],
+                                    },
+                                )
+                            )
+                            fig.update_layout(height=320)
+                            st.plotly_chart(fig, use_container_width=True)
 
             with tab2:
                 if "department" in df.columns and "lifestyle_score" in df.columns:
@@ -676,21 +702,87 @@ with col1:
         st.info("Correlation heatmap will appear after database data is available.")
 
 with col2:
-    st.markdown("### Score Distribution")
+    st.markdown("### Interactive Feature Explorer")
     if (
         st.session_state.db_connected and
         'db' in st.session_state and
         getattr(st.session_state.db, 'is_connected', False)
     ):
         try:
-            df = st.session_state.db.get_all_students()
-            if not df.empty and 'lifestyle_score' in df.columns:
-                fig = go.Figure()
-                fig.add_trace(go.Box(y=df['lifestyle_score'], name='Lifestyle Score'))
-                fig.add_trace(go.Box(y=df['burnout_risk'], name='Burnout Risk'))
-                st.plotly_chart(fig, use_container_width=True)
-        except:
-            st.info("Connect to database to see distributions")
+            df_viz = st.session_state.db.get_all_students()
+            if not df_viz.empty:
+                numeric_candidates = [
+                    "sleep_hours", "sleep_consistency", "exercise", "tired_during_class",
+                    "study_hours", "attendance", "assignment_submission", "concentration",
+                    "screen_time", "late_phone", "social_media_usage", "stress_level",
+                    "overwhelmed", "time_management", "productivity_score", "gpa",
+                    "lifestyle_score", "burnout_risk", "digital_addiction_score", "productivity_index"
+                ]
+                numeric_cols = [c for c in numeric_candidates if c in df_viz.columns]
+                df_viz = as_numeric(df_viz, numeric_cols)
+
+                if len(numeric_cols) >= 1:
+                    viz_type = st.selectbox(
+                        "Visualization Type",
+                        ["Scatter", "Histogram", "Box"],
+                        key="viz_type_selector",
+                    )
+                    x_col = st.selectbox("Primary Feature", numeric_cols, key="viz_x_col")
+
+                    color_options = ["None"] + [c for c in numeric_cols if c != x_col]
+                    color_col = st.selectbox("Color by", color_options, key="viz_color_col")
+                    color_arg = None if color_col == "None" else color_col
+
+                    if viz_type == "Scatter":
+                        y_options = [c for c in numeric_cols if c != x_col] or [x_col]
+                        y_col = st.selectbox("Secondary Feature", y_options, key="viz_y_col")
+                        size_options = ["None"] + [c for c in numeric_cols if c not in {x_col, y_col}]
+                        size_col = st.selectbox("Bubble Size", size_options, key="viz_size_col")
+                        size_arg = None if size_col == "None" else size_col
+
+                        fig = px.scatter(
+                            df_viz,
+                            x=x_col,
+                            y=y_col,
+                            color=color_arg,
+                            size=size_arg,
+                            opacity=0.78,
+                            color_continuous_scale="Turbo",
+                            title=f"{x_col} vs {y_col}",
+                        )
+                        fig.update_traces(marker_line_color="#111111", marker_line_width=0.6)
+                        st.plotly_chart(fig, use_container_width=True)
+
+                    elif viz_type == "Histogram":
+                        fig = px.histogram(
+                            df_viz,
+                            x=x_col,
+                            color=color_arg,
+                            nbins=28,
+                            color_discrete_sequence=px.colors.qualitative.Set2,
+                            color_continuous_scale="Plasma",
+                            title=f"Distribution of {x_col}",
+                        )
+                        st.plotly_chart(fig, use_container_width=True)
+
+                    else:
+                        fig = go.Figure()
+                        fig.add_trace(
+                            go.Box(
+                                y=df_viz[x_col],
+                                name=x_col,
+                                marker_color="#14b8a6",
+                                line_color="#0f766e",
+                                fillcolor="#99f6e4",
+                            )
+                        )
+                        st.plotly_chart(fig, use_container_width=True)
+                else:
+                    st.info("Not enough numeric features available for interactive visualization.")
+            else:
+                st.info("No data available yet.")
+        except Exception:
+            st.info("Connect to database to see visualizations.")
 
 # ============================================================================
 # SECTION 5: AI INSIGHTS (MCP)
