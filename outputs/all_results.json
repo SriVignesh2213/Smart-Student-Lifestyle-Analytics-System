@@ -1,0 +1,52 @@
+{
+  "mlp": {
+    "metrics": {
+      "mse": 0.1887284517288208,
+      "rmse": 0.43442887994333523,
+      "mae": 0.31088513135910034,
+      "r2": 0.8186426162719727
+    },
+    "model_path": "C:\\Users\\SRI VIGNESH\\Downloads\\ML Project Student Lifestyle Analytics\\outputs\\models\\mlp.pth",
+    "trained_at": "2026-05-01T18:59:14.045348"
+  },
+  "dnn": {
+    "metrics": {
+      "mse": 0.23878230154514313,
+      "rmse": 0.4886535598408581,
+      "mae": 0.34003663063049316,
+      "r2": 0.7953715920448303
+    },
+    "model_path": "C:\\Users\\SRI VIGNESH\\Downloads\\ML Project Student Lifestyle Analytics\\outputs\\models\\dnn.pth",
+    "trained_at": "2026-05-01T18:59:18.240896"
+  },
+  "dropout": {
+    "metrics": {
+      "mse": 0.32809361815452576,
+      "rmse": 0.5727945688940546,
+      "mae": 0.47507625818252563,
+      "r2": 0.6676624417304993
+    },
+    "model_path": "C:\\Users\\SRI VIGNESH\\Downloads\\ML Project Student Lifestyle Analytics\\outputs\\models\\dropout.pth",
+    "trained_at": "2026-05-01T18:59:21.512530"
+  },
+  "batch_norm": {
+    "metrics": {
+      "mse": 0.2249780297279358,
+      "rmse": 0.47431848975971386,
+      "mae": 0.3284900188446045,
+      "r2": 0.7611523270606995
+    },
+    "model_path": "C:\\Users\\SRI VIGNESH\\Downloads\\ML Project Student Lifestyle Analytics\\outputs\\models\\batch_norm.pth",
+    "trained_at": "2026-05-01T18:59:27.445014"
+  },
+  "hybrid": {
+    "metrics": {
+      "mse": 0.06713035702705383,
+      "rmse": 0.2590952663154112,
+      "mae": 0.19880829751491547,
+      "r2": 0.92535400390625
+    },
+    "model_path": "C:\\Users\\SRI VIGNESH\\Downloads\\ML Project Student Lifestyle Analytics\\outputs\\models\\hybrid.pth",
+    "trained_at": "2026-05-01T18:59:33.613994"
+  }
+}
