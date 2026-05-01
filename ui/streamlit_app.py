@@ -42,6 +42,83 @@ from config.settings import DB_CONFIG
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+def apply_custom_theme():
+    st.markdown(
+        """
+        <style>
+            :root {
+                --bg-soft: #f4f7fb;
+                --panel: #ffffff;
+                --ink: #1f2937;
+                --muted: #6b7280;
+                --accent: #0f766e;
+                --accent-2: #f59e0b;
+                --ring: rgba(15, 118, 110, 0.20);
+            }
+            .stApp {
+                background:
+                    radial-gradient(1200px 500px at -5% -10%, rgba(245, 158, 11, 0.10), transparent 55%),
+                    radial-gradient(900px 500px at 110% -10%, rgba(15, 118, 110, 0.12), transparent 50%),
+                    var(--bg-soft);
+            }
+            .main-card {
+                background: linear-gradient(120deg, #0f172a 0%, #0f766e 100%);
+                border-radius: 16px;
+                padding: 20px 22px;
+                color: #f8fafc;
+                box-shadow: 0 12px 30px rgba(15, 23, 42, 0.24);
+                margin-bottom: 14px;
+            }
+            .main-card h1 {
+                margin: 0 0 6px 0;
+                font-size: 2rem;
+                font-weight: 800;
+                letter-spacing: 0.2px;
+            }
+            .main-card p {
+                margin: 0;
+                color: #dbeafe;
+            }
+            .insight-card {
+                background: var(--panel);
+                border: 1px solid #e5e7eb;
+                border-left: 4px solid var(--accent);
+                border-radius: 12px;
+                padding: 12px 14px;
+                box-shadow: 0 8px 16px rgba(17, 24, 39, 0.06);
+            }
+            .stMetric {
+                background: rgba(255, 255, 255, 0.86);
+                border: 1px solid #e5e7eb;
+                border-radius: 12px;
+                padding: 10px 12px;
+            }
+            .stTabs [data-baseweb="tab-list"] {
+                gap: 8px;
+            }
+            .stTabs [data-baseweb="tab"] {
+                background: #ffffff;
+                border: 1px solid #d1d5db;
+                border-radius: 999px;
+                padding: 8px 14px;
+            }
+            .stTabs [aria-selected="true"] {
+                border-color: var(--accent);
+                box-shadow: 0 0 0 3px var(--ring);
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def as_numeric(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    for col in columns:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df
+
 # ============================================================================
 # SESSION STATE INITIALIZATION
 # ============================================================================
@@ -109,8 +186,17 @@ with st.sidebar:
 # MAIN CONTENT
 # ============================================================================
 
-st.markdown("# 📊 Smart Student Lifestyle Analytics System")
-st.markdown("*Powered by Deep Learning, PyTorch, and PostgreSQL*\n")
+apply_custom_theme()
+
+st.markdown(
+    """
+    <div class="main-card">
+        <h1>Smart Student Lifestyle Analytics</h1>
+        <p>Built with Deep Learning, PostgreSQL, and live student wellness intelligence.</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # ============================================================================
 # SECTION 1: DATA OVERVIEW
@@ -169,14 +255,24 @@ if (
         df = st.session_state.db.get_all_students()
         
         if not df.empty:
+            df = as_numeric(
+                df,
+                [
+                    "sleep_hours",
+                    "study_hours",
+                    "screen_time",
+                    "attendance",
+                    "productivity_score",
+                    "gpa",
+                    "lifestyle_score",
+                    "burnout_risk",
+                ],
+            )
             st.subheader("📋 Student Data Table")
             st.dataframe(df, width='stretch', height=300)
             
             # Statistics
             st.subheader("📊 Data Statistics")
-            for col in ["lifestyle_score", "burnout_risk", "gpa"]:
-                if col in df.columns:
-                    df[col] = pd.to_numeric(df[col], errors="coerce")
             col1, col2, col3, col4 = st.columns(4)
             
             with col1:
@@ -206,6 +302,97 @@ if (
                     fig = px.histogram(df, x='burnout_risk', nbins=30,
                                      title="Burnout Risk Distribution")
                     st.plotly_chart(fig, use_container_width=True)
+
+            st.subheader("🧭 Insight Deck")
+            tab1, tab2, tab3 = st.tabs(["Patterns", "Departments", "Interpretation"])
+
+            with tab1:
+                c1, c2 = st.columns(2)
+                with c1:
+                    if all(col in df.columns for col in ["sleep_hours", "gpa", "burnout_risk"]):
+                        fig = px.scatter(
+                            df,
+                            x="sleep_hours",
+                            y="gpa",
+                            color="burnout_risk",
+                            size="study_hours" if "study_hours" in df.columns else None,
+                            color_continuous_scale="Viridis",
+                            title="Sleep vs GPA (colored by Burnout Risk)",
+                            opacity=0.75,
+                        )
+                        st.plotly_chart(fig, use_container_width=True)
+                with c2:
+                    if "burnout_risk" in df.columns:
+                        avg_burnout = float(df["burnout_risk"].mean())
+                        fig = go.Figure(
+                            go.Indicator(
+                                mode="gauge+number",
+                                value=avg_burnout,
+                                title={"text": "Average Burnout Risk"},
+                                gauge={
+                                    "axis": {"range": [0, 10]},
+                                    "bar": {"color": "#0f766e"},
+                                    "steps": [
+                                        {"range": [0, 3.5], "color": "#dcfce7"},
+                                        {"range": [3.5, 6], "color": "#fef3c7"},
+                                        {"range": [6, 10], "color": "#fee2e2"},
+                                    ],
+                                },
+                            )
+                        )
+                        fig.update_layout(height=380)
+                        st.plotly_chart(fig, use_container_width=True)
+
+            with tab2:
+                if "department" in df.columns and "lifestyle_score" in df.columns:
+                    dept = (
+                        df.groupby("department", as_index=False)["lifestyle_score"]
+                        .mean()
+                        .sort_values("lifestyle_score", ascending=False)
+                    )
+                    fig = px.bar(
+                        dept,
+                        x="department",
+                        y="lifestyle_score",
+                        color="lifestyle_score",
+                        color_continuous_scale="Tealgrn",
+                        title="Average Lifestyle Score by Department",
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
+                else:
+                    st.info("Department-level insights will appear once department and score columns are available.")
+
+            with tab3:
+                burnout_high = (
+                    (df["burnout_risk"] >= 6).mean() * 100
+                    if "burnout_risk" in df.columns
+                    else 0
+                )
+                low_sleep = (
+                    (df["sleep_hours"] < 6).mean() * 100
+                    if "sleep_hours" in df.columns
+                    else 0
+                )
+                if all(col in df.columns for col in ["sleep_hours", "gpa"]):
+                    corr = df[["sleep_hours", "gpa"]].corr().iloc[0, 1]
+                else:
+                    corr = np.nan
+
+                st.markdown(
+                    f"""
+                    <div class="insight-card">
+                        <b>Current Cohort Snapshot</b><br/>
+                        • High burnout (>= 6): <b>{burnout_high:.1f}%</b><br/>
+                        • Low sleep (&lt; 6 hrs): <b>{low_sleep:.1f}%</b><br/>
+                        • Sleep-GPA correlation: <b>{corr:.2f}</b><br/><br/>
+                        <b>Interpretation</b><br/>
+                        • If high burnout is above 30%, prioritize stress and workload interventions.<br/>
+                        • If low sleep is above 25%, sleep hygiene campaigns can move GPA and burnout together.<br/>
+                        • Positive sleep-GPA correlation suggests academic outcomes improve with better sleep behavior.
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
         else:
             st.warning("⚠️ No data in database. Please refresh data from Google Sheets.")
     except Exception as e:
@@ -317,7 +504,8 @@ if results_file.exists():
                 fig.add_trace(go.Bar(x=models, y=rmse_scores, name='RMSE', marker_color='blue'))
                 fig.update_layout(title="RMSE by Model", xaxis_title="Model", yaxis_title="RMSE")
                 st.plotly_chart(fig, use_container_width=True)
-        
+
+
     except Exception as e:
         st.warning(f"⚠️ Could not load model comparison: {e}")
 else:
@@ -461,18 +649,31 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("### Feature Importance Heatmap")
-    # Create dummy feature importance
-    features = ['sleep_hours', 'study_hours', 'screen_time', 'stress_level',
-                'exercise', 'concentration', 'productivity_score', 'social_media']
-    importance = np.random.rand(1, len(features))
-    
-    fig = go.Figure(data=go.Heatmap(
-        z=importance,
-        x=features,
-        colorscale='Viridis'
-    ))
-    fig.update_layout(height=400)
-    st.plotly_chart(fig, use_container_width=True)
+    try:
+        df_heat = st.session_state.db.get_all_students()
+        if not df_heat.empty:
+            numeric_candidates = [
+                "sleep_hours", "study_hours", "screen_time", "stress_level",
+                "exercise", "concentration", "productivity_score", "social_media_usage",
+                "lifestyle_score", "burnout_risk", "gpa"
+            ]
+            available = [c for c in numeric_candidates if c in df_heat.columns]
+            df_heat = as_numeric(df_heat, available)
+            corr = df_heat[available].corr(numeric_only=True).fillna(0)
+            fig = px.imshow(
+                corr,
+                text_auto=".2f",
+                color_continuous_scale="RdBu_r",
+                zmin=-1,
+                zmax=1,
+                title="Feature Correlation Matrix",
+            )
+            fig.update_layout(height=420)
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("No data available for correlation heatmap yet.")
+    except Exception:
+        st.info("Correlation heatmap will appear after database data is available.")
 
 with col2:
     st.markdown("### Score Distribution")
